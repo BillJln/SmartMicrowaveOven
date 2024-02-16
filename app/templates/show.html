@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Mircowave Oven</title>
+    <style>
+        div.topic_line {
+            position: fixed;
+            z-index: 999;
+            height: 50px;
+            width: auto;
+            background: #3498db;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+
+        div.main_block {
+            position: relative;
+            height: 1200px;
+            width: auto;
+            margin-left: -50px;
+            margin-right: -50px;
+            text-align: center;
+            background-color: #B0E2FF;
+        }
+
+        div.center_block {
+            position: relative;
+            background-color: #92CDED;
+            height: 1000px;
+            width: auto;
+            left: 50%;
+            top: 600px;
+            transform: translate(-50%, -50%);
+        }
+
+        span.information {
+            position: relative;
+            text-align: center;
+            top: 15px;
+            height: 50px;
+            width: auto;
+            line-height: 60px;
+            padding-top: 50px;
+            left: 50px;
+            position: relative;
+            font-size: 30px;
+            color: #FFFFFF;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .fresh {
+            position: relative;
+            text-align: center;
+            top: 15px;
+            height: 50px;
+            width: auto;
+            line-height: 60px;
+            padding-top: 50px;
+            left: 50px;
+            position: relative;
+            font-size: 30px;
+            color: #E0FFFF;
+        }
+
+        a:hover {
+            color: red;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="topic_line">
+    <h3
+            style="color:#FFFFFF;width: auto;height:50px;line-height: 50px;position:relative;padding-left:5%;display: inline;">
+        基于conformer,resnet34的物联网人工智能微波炉</h3>
+    <a href=""
+       style="color:#FFFFFF;width:auto;height:50px;line-height:50px;position:relative;float:right;padding-right:5%;display: inline;">技术使用<a>
+</div>
+
+<div class="main_block">
+    <div class="center_block">
+
+        <img src="../static/images/{{picture}}" alt="无图片"
+             style="position: relative;width: 300px;height: 300px;left: 50px">
+
+        <div>
+            <span class="information">图片类型：</span>
+            <span class="information">{{picture_kind}}</span>
+        </div>
+
+        <div>
+            <span class="information">指令：</span>
+            <span class="information">{{order}}</span>
+        </div>
+
+        <div>
+            <span class="information">加热模式：</span>
+            <span class="information">{{heating_mode}}</span>
+        </div>
+
+        <div>
+            <span class="information">额定温度1（底部温度传感器）：</span>
+            <span class="information">{{setting_temperature1}}</span>
+        </div>
+
+        <div>
+            <span class="information">额定温度2（顶部温度传感器）：</span>
+            <span class="information">{{setting_temperature2}}</span>
+        </div>
+
+        <div>
+            <span class="information">到达指定温度后额定加热时间：</span>
+            <span class="information">{{additional_heating_time}}</span>
+        </div>
+
+        <div>
+            <span class="information">实时温度1（底部温度传感器）：</span>
+            <span class="information">{{current_time_temperature1}}</span>
+        </div>
+
+        <div>
+            <span class="information">实时温度2（顶部温度传感器）：</span>
+            <span class="information">{{current_time_temperature2}}</span>
+        </div>
+
+        <div>
+            <span class="information">已加热时长：</span>
+            <span class="information">{{heating_time}}</span>
+        </div>
+
+        <div>
+            <span class="information">到达指定温度后的剩余加热时长：</span>
+            <span class="information">{{count_down_time}}</span>
+        </div>
+
+        <h1><a href="/show" class="fresh">刷新查看实时数据</a>
+            <h1>
+
+    </div>
+</div>
+</body>
+</html>

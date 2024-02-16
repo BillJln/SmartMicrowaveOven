@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Mircowave Oven</title>
+    <style>
+        div.topic_line {
+            position: fixed;
+            z-index: 999;
+            height: 50px;
+            width: auto;
+            background: #3498db;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+
+        div.main_block {
+            position: relative;
+            height: 1200px;
+            width: auto;
+            left: 50%;
+            top: 600px;
+            text-align: center;
+            background-color: #B0E2FF;
+            transform: translate(-50%, -50%);
+        }
+
+        div.center_block {
+            position: relative;
+            background-color: #92CDED;
+            height: 1000px;
+            width: auto;
+            left: 50%;
+            top: 600px;
+            transform: translate(-50%, -50%);
+        }
+
+        div.upload_box {
+            position: relative;
+            background-color: #87CEFA;
+            height: 600px;
+            width: 600px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            border-style: solid;
+            border-width: medium;
+            border-color: lightgrey;
+        }
+
+
+        div.upload {
+            position: relative;
+            text-align: center;
+            top: 15px;
+            height: 50px;
+            width: auto;
+            line-height: 60px;
+            padding-top: 50px;
+            position: relative;
+            font-size: 30px;
+            color: #FFFFFF;
+        }
+
+        .start {
+            position: relative;
+            text-align: center;
+            top: 15px;
+            height: 50px;
+            width: auto;
+            line-height: 60px;
+            padding-top: 50px;
+            position: relative;
+            font-size: 30px;
+            color: #E0FFFF;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+<div class="topic_line">
+    <h3
+            style="color:#FFFFFF;width: auto;height:50px;line-height: 50px;position:relative;padding-left:5%;display: inline;">
+        基于conformer,resnet34的物联网人工智能微波炉</h3>
+    <a href="https://ai.baidu.com/easydl/"
+       style="color:#FFFFFF;width:auto;height:50px;line-height:50px;position:relative;float:right;padding-right:5%;display: inline;">了解详情<a>
+</div>
+
+<div class="main_block">
+    <div class="center_block">
+        <div class="upload_box">
+            <div class="upload">请提交JPG格式图片</div>
+
+            <div class="upload">
+                <form action="/uploader" method="POST" enctype="multipart/form-data">
+                    <input type="file" name="file"/>
+                    <input type="submit"/>
+                </form>
+            </div>
+
+            <div class="upload">请提交MP3格式音频</div>
+            <div class="upload">
+                <form action="/uploader" method="POST" enctype="multipart/form-data">
+                    <input type="file" name="file"/>
+                    <input type="submit"/>
+                </form>
+            </div>
+
+            <div class="start">
+                <form action="/show" method="POST" enctype="multipart/form-data">
+                    <a href="/show">开始检测</a>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
